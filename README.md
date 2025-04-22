@@ -8,7 +8,7 @@ Proyek ini mengimplementasikan sistem computer vision yang mampu mengenali hewan
 
 --------------------------
 ## 📁 Struktur Proyek
-submission-klasifikasi-gambar/
+submission-klasifikasi-gambar
 ├───tfjs_model
 | ├───group1-shard1of1.bin
 | └───model.json
