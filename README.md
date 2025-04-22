@@ -1,13 +1,13 @@
-# Klasifikasi Gambar Animals
+## Klasifikasi Gambar Animals
 ----------------------------
 Sebuah proyek deep learning untuk pengenalan gambar animals (hewan) menggunakan Convolutional Neural Network (CNN)
 
 ---------------------------
-# 📝 Penjelasan Proyek 
+## 📝 Penjelasan Proyek 
 Proyek ini mengimplementasikan sistem computer vision yang mampu mengenali hewan dari gambar. Sistem ini menggunakan CNN dengan jenis MobileNet yang dilatih pada dataset animals10 untuk mengklasifikasikan gambar hewan ke dalam 10 kelas hewan berbeda.
 
 --------------------------
-# 📁 Struktur Proyek
+## 📁 Struktur Proyek
 submission-klasifikasi-gambar/
 ├───tfjs_model
 | ├───group1-shard1of1.bin
