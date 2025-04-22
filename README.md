@@ -1,1 +1,1 @@
-# Submission-Klasifikasi-Gambar
+# Klasifikasi-Gambar
