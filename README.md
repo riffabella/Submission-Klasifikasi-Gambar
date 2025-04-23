@@ -1,14 +1,15 @@
-## Klasifikasi Gambar Animals
+# Proyek Klasifikasi Gambar Animals
 ----------------------------
 Sebuah proyek deep learning untuk pengenalan gambar animals (hewan) menggunakan Convolutional Neural Network (CNN)
 
 ---------------------------
 ## 📝 Penjelasan Proyek 
-Proyek ini mengimplementasikan sistem computer vision yang mampu mengenali hewan dari gambar. Sistem ini menggunakan CNN dengan jenis MobileNet yang dilatih pada dataset animals10 untuk mengklasifikasikan gambar hewan ke dalam 10 kelas hewan yang berbeda.
+Proyek ini mengimplementasikan sistem computer vision untuk klasifikasi gambar hewan menggunakan arsitektur CNN MobileNet. Model dilatih pada dataset Animals10 dan mampu mengklasifikasikan gambar ke dalam 10 kelas hewan berbeda.
 
 --------------------------
 ## 📁 Struktur Proyek
-submission-klasifikasi-gambar
+```
+Submission-Klasifikasi-Gambar
 ├───tfjs_model
 | ├───group1-shard1of1.bin
 | └───model.json
@@ -18,16 +19,35 @@ submission-klasifikasi-gambar
 ├───saved_model
 | ├───saved_model.pb
 | └───variables
-├───notebook.ipynb
+├───Submission_Akhir_Klasifikasi_Gambar.ipynb
 ├───README.md
 └───requirements.txt
+```
+
+--------------------------
+## 📄 Dataset yang digunakan
+Menggunakan dataset dari Kaggle yaitu [Animals10 (Kaggle)](https://www.kaggle.com/datasets/alessiocorrado99/animals10)
+terdapat 26.200 gambar yang terbagi kedalam 10 kelas seperti berikut:
+- cane: dogs
+- cavallo: horses
+- elefante: elephants
+- farfalla: butterflys
+- gallina: chickens
+- gatto: cats
+- mucca: cows
+- pecora: sheeps
+- ragno: spiders
+- scoittolo: squirrel
 
 ---------------------------
-## 🚀 Teknologi yang Digunakan
+## 🚀 Teknologi yang digunakan
 - Python
 - TensorFlow
 - MobileNet
+- Numpy
 - Matplotlib
+- PIL
+- OS, shutil, dan random
 - Kaggle API
 - Google Colab
 - Keras
@@ -42,7 +62,10 @@ submission-klasifikasi-gambar
 
 ---------------------------
 ## 📊 Hasil Training
-- Model menunjukkan konvergensi yang baik dalam 3 epoch pertama
+- Training accuracy: 94.10%
+- Validation accuracy: 88.66%
+- Test accuracy: 91.62%
+- Model menunjukkan konvergensi yang baik dalam 3 epoch pertama berdasarkan validation loss
 - Class imbalance ditangani dengan class weighting
 - Penggunaan callbacks berhasil mencegah overfitting
 
@@ -63,6 +86,6 @@ Model mampu melakukan prediksi gambar acak dari folder test, menampilkan :
 --------------------------
 ## 📦 Ekspor Model
 Model ini diekspor ke format:
-- SavedModel ('saved_model/')
-- TensorFlow Lite ('tflite/')
-- TensorFlow.js ('tfjs_model/')
+- SavedModel ('saved_model/') -> untuk deployment di server atau cloud
+- TensorFlow Lite ('tflite/') ->   untuk perangkat mobile dan embedded
+- TensorFlow.js ('tfjs_model/') -> untuk dijalankan di browser dan aplikasi berbasis JavaScript
